@@ -5,7 +5,10 @@
     "serve": "vitepress serve src"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.26",
-    "vue": "^3.2.41"
+    "vitepress": "^1.0.0-alpha.28",
+    "vue": "^3.2.44"
+  },
+  "dependencies": {
+    "glob": "^8.0.3"
   }
 }

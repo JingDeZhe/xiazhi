@@ -1,0 +1,73 @@
+{
+  "base": "/xiazhi/",
+  "outDir": "../public",
+  "title": "夏至",
+  "themeConfig": {
+    "sidebar": [
+      {
+        "text": "序言",
+        "items": [
+          {
+            "text": "前言",
+            "link": "/docs/00-序言/01-前言.md"
+          }
+        ],
+        "collapsible": true
+      },
+      {
+        "text": "故事",
+        "items": [
+          {
+            "text": "渔歌子",
+            "items": [
+              {
+                "text": "正篇",
+                "link": "/docs/03-故事/01-渔歌子/01-正篇.md"
+              }
+            ],
+            "collapsible": true
+          },
+          {
+            "text": "复梦篇",
+            "items": [
+              {
+                "text": "M的消失",
+                "link": "/docs/03-故事/02-复梦篇/M的消失.md"
+              },
+              {
+                "text": "冰狐",
+                "link": "/docs/03-故事/02-复梦篇/冰狐.md"
+              },
+              {
+                "text": "别离",
+                "link": "/docs/03-故事/02-复梦篇/别离.md"
+              },
+              {
+                "text": "尽游",
+                "link": "/docs/03-故事/02-复梦篇/尽游.md"
+              },
+              {
+                "text": "支舞",
+                "link": "/docs/03-故事/02-复梦篇/支舞.md"
+              },
+              {
+                "text": "连梦",
+                "link": "/docs/03-故事/02-复梦篇/连梦.md"
+              },
+              {
+                "text": "迷路",
+                "link": "/docs/03-故事/02-复梦篇/迷路.md"
+              },
+              {
+                "text": "飞翔",
+                "link": "/docs/03-故事/02-复梦篇/飞翔.md"
+              }
+            ],
+            "collapsible": true
+          }
+        ],
+        "collapsible": true
+      }
+    ]
+  }
+}

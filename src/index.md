@@ -7,7 +7,7 @@ hero:
   actions:
     - theme: alt
       text: Follow 🦌
-      link: /docs/stories/fishing-song
+      link: /docs/00-序言/01-前言
 
 features:
   - icon: 😶
