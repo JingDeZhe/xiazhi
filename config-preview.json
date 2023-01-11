@@ -15,6 +15,24 @@
         "collapsible": true
       },
       {
+        "text": "分享",
+        "items": [
+          {
+            "text": "中国传统色",
+            "link": "/docs/01-分享/01-中国传统色.md"
+          },
+          {
+            "text": "日本传统色",
+            "link": "/docs/01-分享/02-日本传统色.md"
+          },
+          {
+            "text": "孟塞尔颜色系统",
+            "link": "/docs/01-分享/03-孟塞尔颜色系统.md"
+          }
+        ],
+        "collapsible": true
+      },
+      {
         "text": "故事",
         "items": [
           {
@@ -61,6 +79,42 @@
               {
                 "text": "飞翔",
                 "link": "/docs/03-故事/02-复梦篇/飞翔.md"
+              }
+            ],
+            "collapsible": true
+          },
+          {
+            "text": "寂静",
+            "items": [
+              {
+                "text": "序言",
+                "link": "/docs/03-故事/03-寂静/01-序言.md"
+              },
+              {
+                "text": "卷一",
+                "link": "/docs/03-故事/03-寂静/02-卷一.md"
+              },
+              {
+                "text": "卷二",
+                "link": "/docs/03-故事/03-寂静/03-卷二.md"
+              },
+              {
+                "text": "卷三",
+                "link": "/docs/03-故事/03-寂静/04-卷三.md"
+              }
+            ],
+            "collapsible": true
+          },
+          {
+            "text": "女主与小女生",
+            "items": [
+              {
+                "text": "卷一",
+                "link": "/docs/03-故事/04-女主与小女生/01-卷一.md"
+              },
+              {
+                "text": "卷二",
+                "link": "/docs/03-故事/04-女主与小女生/02-卷二.md"
               }
             ],
             "collapsible": true
