@@ -5,12 +5,13 @@
     "serve": "vitepress serve src"
   },
   "devDependencies": {
-    "vitepress": "^1.0.0-alpha.35",
-    "vue": "^3.2.45"
+    "glob": "^10.2.2",
+    "sass": "^1.62.1",
+    "vitepress": "1.0.0-alpha.75"
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
-    "element-plus": "^2.2.28",
-    "glob": "^8.0.3"
+    "element-plus": "^2.3.4",
+    "vue": "^3.2.47"
   }
 }

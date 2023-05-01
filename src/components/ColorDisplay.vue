@@ -45,24 +45,24 @@ function copy(str) {
 }
 </script>
 
-<style scoped>
+<style lang="scss">
 #colors {
   display: flex;
   flex-wrap: wrap;
-}
-.color_item {
-  width: 70px;
-  height: 200px;
-  margin: 5px;
-  writing-mode: tb-rl;
-  text-align: center;
-  line-height: 70px;
-  font-family: SimSun, fangsong, serif;
-  font-size: 20px;
-  transition: transform 0.1s;
-  cursor: pointer;
-}
-.color_item:hover {
-  transform: scale(1.1);
+  .color_item {
+    width: 70px;
+    height: 200px;
+    margin: 5px;
+    writing-mode: tb-rl;
+    text-align: center;
+    line-height: 70px;
+    font-family: SimSun, fangsong, serif;
+    font-size: 20px;
+    transition: transform 0.1s;
+    cursor: pointer;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
 }
 </style>

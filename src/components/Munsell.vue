@@ -71,50 +71,52 @@ function copyColor(color) {
 }
 </script>
 
-<style scoped>
-.colors-row {
-  display: flex;
-}
-.colors-item {
-  width: 1.5em;
-  height: 1.5em;
-  margin: 5px;
-  cursor: pointer;
-}
-.colors-item:hover {
-  outline: 2px solid currentColor;
-}
-.rounds {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  margin: 20px 0;
-  max-width: 100%;
-}
-.rounds-item {
-  width: 6%;
-  height: 6%;
-  border-radius: 3px;
-  position: absolute;
-  cursor: pointer;
-}
-.rounds-item.active {
-  outline: 2px solid var(--vt-c-text-1);
-}
-.rounds-center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #fff;
-  font-size: 30px;
-  font-weight: 700;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 130px;
-  height: 130px;
-  border-radius: 1000px;
-  transform: translate(-50%, -50%);
-  transition: all 0.2s ease-in-out;
+<style lang="scss">
+.munsell {
+  .colors-row {
+    display: flex;
+  }
+  .colors-item {
+    width: 1.5em;
+    height: 1.5em;
+    margin: 5px;
+    cursor: pointer;
+  }
+  .colors-item:hover {
+    outline: 2px solid currentColor;
+  }
+  .rounds {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 20px 0;
+    max-width: 100%;
+  }
+  .rounds-item {
+    width: 6%;
+    height: 6%;
+    border-radius: 3px;
+    position: absolute;
+    cursor: pointer;
+  }
+  .rounds-item.active {
+    outline: 2px solid var(--vt-c-text-1);
+  }
+  .rounds-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 130px;
+    height: 130px;
+    border-radius: 1000px;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s ease-in-out;
+  }
 }
 </style>

@@ -1,18 +1,19 @@
-const glob = require('glob')
+const { globSync } = require('glob')
 const path = require('path')
+const fs = require('fs')
 
 const DOCS_DIR = '/docs/'
 
 function generateSidebar() {
   try {
-    const files = glob.sync('**/*.@(md|html)', {
+    const files = globSync('**/*.@(md|html)', {
       cwd: path.resolve(__dirname, `../..${DOCS_DIR}`),
     })
     const menuMap = new Map()
     files.forEach((file) => {
       const info = path.parse(file)
       const title = info.name.replace(/^[\d\-]*/, '')
-      const dirs = info.dir.split('/').filter((v) => !!v)
+      const dirs = info.dir.split('\\').filter((v) => !!v)
       let t = menuMap
       dirs.forEach((dir) => {
         dir = dir.replace(/^[\d\-]*/, '')
@@ -30,7 +31,7 @@ function generateSidebar() {
         items.push({
           text: title,
           items: items2,
-          collapsible: true,
+          collapsed: true,
         })
         for (const [k, v] of value) {
           fn(k, v, items2)
@@ -49,7 +50,13 @@ function generateSidebar() {
   }
 }
 
-// generateSidebar()
+//#region test
+fs.writeFile(
+  'config-preview.json',
+  JSON.stringify(generateSidebar(), null, '  '),
+  (err) => {}
+)
+//#endregion
 
 module.exports = {
   generateSidebar,

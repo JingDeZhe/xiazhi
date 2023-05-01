@@ -1,6 +1,5 @@
 const { generateSidebar } = require('./util/generate')
 const { defineConfig } = require('vitepress')
-const fs = require('fs')
 
 const config = defineConfig({
   base: '/xiazhi/',
@@ -10,11 +9,5 @@ const config = defineConfig({
     sidebar: generateSidebar(),
   },
 })
-
-fs.writeFile(
-  'config-preview.json',
-  JSON.stringify(config, null, '  '),
-  (err) => {}
-)
 
 module.exports = config
