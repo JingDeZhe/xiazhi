@@ -13,7 +13,7 @@ function generateSidebar() {
     files.forEach((file) => {
       const info = path.parse(file)
       const title = info.name.replace(/^[\d\-]*/, '')
-      const dirs = info.dir.split('\\').filter((v) => !!v)
+      const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
       let t = menuMap
       dirs.forEach((dir) => {
         dir = dir.replace(/^[\d\-]*/, '')
@@ -22,7 +22,7 @@ function generateSidebar() {
       })
       t.set(title, {
         text: title,
-        link: `${DOCS_DIR}${file}`,
+        link: path.join(DOCS_DIR, file),
       })
     })
     const fn = (title, value, items) => {
