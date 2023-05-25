@@ -9,6 +9,7 @@ function generateSidebar() {
     const files = globSync('**/*.@(md|html)', {
       cwd: path.resolve(__dirname, `../..${DOCS_DIR}`),
     })
+    files.sort(new Intl.Collator('zh-CN').compare)
     const menuMap = new Map()
     files.forEach((file) => {
       const info = path.parse(file)

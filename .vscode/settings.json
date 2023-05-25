@@ -3,5 +3,6 @@
     "activityBar.background": "#8a6e54",
     "titleBar.activeBackground": "#8a6e54",
     "titleBar.activeForeground": "#eeeeee"
-  }
+  },
+  "editor.fontFamily": "霞鹜文楷等宽"
 }
