@@ -3,7 +3,7 @@ const { defineConfig } = require('vitepress')
 
 const config = defineConfig({
   base: '/xiazhi/',
-  outDir: '../public',
+  outDir: '../dist',
   title: '夏至',
   themeConfig: {
     sidebar: generateSidebar(),
