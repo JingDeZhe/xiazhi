@@ -1,0 +1,8 @@
+@font-face {
+  font-family: lxgw;
+  src: url('https://lotusloli-1258290249.cos.ap-guangzhou.myqcloud.com/store/fonts/lxgw-wenkai-lite-v1.300/LXGWWenKaiLite-Regular.ttf');
+}
+
+body {
+  font-family: lxgw, serif;
+}

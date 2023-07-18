@@ -13,16 +13,6 @@
     "text": "分享",
     "items": [
       {
-        "text": "灵异惊悚故事杂谈",
-        "items": [
-          {
-            "text": "序言",
-            "link": "\\docs\\01-分享\\00-灵异惊悚故事杂谈\\00-序言.md"
-          }
-        ],
-        "collapsed": true
-      },
-      {
         "text": "中国传统色",
         "link": "\\docs\\01-分享\\01-中国传统色.md"
       },
@@ -33,6 +23,26 @@
       {
         "text": "孟塞尔颜色系统",
         "link": "\\docs\\01-分享\\03-孟塞尔颜色系统.md"
+      }
+    ],
+    "collapsed": true
+  },
+  {
+    "text": "杂记",
+    "items": [
+      {
+        "text": "灵异惊悚故事杂谈",
+        "items": [
+          {
+            "text": "序言",
+            "link": "\\docs\\03-杂记\\00-灵异惊悚故事杂谈\\00-序言.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "思维的断续",
+        "link": "\\docs\\03-杂记\\思维的断续.md"
       }
     ],
     "collapsed": true
