@@ -31,11 +31,21 @@
     "text": "杂记",
     "items": [
       {
+        "text": "复梦篇",
+        "items": [
+          {
+            "text": "M的消失",
+            "link": "\\docs\\03-杂记\\00-复梦篇\\M的消失.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
         "text": "灵异惊悚故事杂谈",
         "items": [
           {
             "text": "序言",
-            "link": "\\docs\\03-杂记\\00-灵异惊悚故事杂谈\\00-序言.md"
+            "link": "\\docs\\03-杂记\\01-灵异惊悚故事杂谈\\00-序言.md"
           }
         ],
         "collapsed": true
@@ -43,6 +53,10 @@
       {
         "text": "思维的断续",
         "link": "\\docs\\03-杂记\\思维的断续.md"
+      },
+      {
+        "text": "夜间海滩",
+        "link": "\\docs\\03-杂记\\夜间海滩.md"
       }
     ],
     "collapsed": true
