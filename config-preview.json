@@ -41,11 +41,21 @@
         "collapsed": true
       },
       {
-        "text": "灵异惊悚故事杂谈",
+        "text": "怪谈篇",
         "items": [
           {
             "text": "序言",
-            "link": "\\docs\\03-杂记\\01-灵异惊悚故事杂谈\\00-序言.md"
+            "link": "\\docs\\03-杂记\\01-怪谈篇\\00-序言.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "流浪篇",
+        "items": [
+          {
+            "text": "序言",
+            "link": "\\docs\\03-杂记\\02-流浪篇\\00-序言.md"
           }
         ],
         "collapsed": true
