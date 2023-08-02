@@ -28,6 +28,30 @@
     "collapsed": true
   },
   {
+    "text": "逻辑",
+    "items": [
+      {
+        "text": "函数式编程的常规操作01",
+        "link": "\\docs\\02-逻辑\\01-函数式编程的常规操作01.md"
+      },
+      {
+        "text": "孔乙己学VUE3",
+        "items": [
+          {
+            "text": "序言",
+            "link": "\\docs\\02-逻辑\\01-孔乙己学VUE3\\00-序言.md"
+          },
+          {
+            "text": "初始化项目",
+            "link": "\\docs\\02-逻辑\\01-孔乙己学VUE3\\01-初始化项目.md"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
+  },
+  {
     "text": "杂记",
     "items": [
       {
@@ -40,6 +64,10 @@
           {
             "text": "寻镜记",
             "link": "\\docs\\03-杂记\\00-复梦篇\\02-寻镜记.md"
+          },
+          {
+            "text": "复仇记",
+            "link": "\\docs\\03-杂记\\00-复梦篇\\03-复仇记.md"
           }
         ],
         "collapsed": true

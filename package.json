@@ -6,6 +6,7 @@
   },
   "devDependencies": {
     "glob": "^10.3.3",
+    "prettier-plugin-md-nocjsp": "^1.5.1",
     "sass": "^1.63.6",
     "vitepress": "1.0.0-beta.5"
   },
