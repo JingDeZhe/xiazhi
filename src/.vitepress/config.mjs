@@ -1,5 +1,6 @@
-const { generateSidebar } = require('./util/generate')
-const { defineConfig } = require('vitepress')
+import { defineConfig } from 'vitepress'
+
+import { generateSidebar } from './util/generate.mjs'
 
 const config = defineConfig({
   base: '/xiazhi/',
@@ -17,4 +18,4 @@ const config = defineConfig({
   },
 })
 
-module.exports = config
+export default config

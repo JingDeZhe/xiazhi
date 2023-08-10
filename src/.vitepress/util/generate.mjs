@@ -1,18 +1,21 @@
-const { globSync } = require('glob')
-const path = require('path')
-const fs = require('fs')
+import { globSync } from 'glob'
+import fs from 'node:fs'
+import { dirname, join, parse } from 'node:path'
+import { fileURLToPath } from 'node:url'
 
 const DOCS_DIR = '/docs/'
+const __dirname = dirname(fileURLToPath(import.meta.url))
+const resolve = (p) => join(__dirname, p)
 
-function generateSidebar() {
+export function generateSidebar() {
   try {
     const files = globSync('**/*.@(md|html)', {
-      cwd: path.resolve(__dirname, `../..${DOCS_DIR}`),
+      cwd: resolve(`../..${DOCS_DIR}`),
     })
     files.sort(new Intl.Collator('zh-CN').compare)
     const menuMap = new Map()
     files.forEach((file) => {
-      const info = path.parse(file)
+      const info = parse(file)
       const title = info.name.replace(/^[\d\-]*/, '')
       const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
       let t = menuMap
@@ -23,7 +26,7 @@ function generateSidebar() {
       })
       t.set(title, {
         text: title,
-        link: path.join(DOCS_DIR, file),
+        link: join(DOCS_DIR, file),
       })
     })
     const fn = (title, value, items) => {
@@ -58,7 +61,3 @@ fs.writeFile(
   (err) => {}
 )
 //#endregion
-
-module.exports = {
-  generateSidebar,
-}
