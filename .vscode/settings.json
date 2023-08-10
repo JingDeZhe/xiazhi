@@ -1,15 +1,8 @@
 {
   "editor.fontFamily": "霞鹜文楷等宽",
   "workbench.colorCustomizations": {
-    "activityBar.activeBackground": "#2fa887",
-    "activityBar.background": "#2fa887",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "commandCenter.border": "#e7e7e799",
-    "titleBar.activeBackground": "#248067",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#24806799",
-    "titleBar.inactiveForeground": "#e7e7e799"
-  },
-  "peacock.color": "#248067"
+    "activityBar.background": "#093049",
+    "titleBar.activeBackground": "#0D4366",
+    "titleBar.activeForeground": "#F7FBFE"
+  }
 }
