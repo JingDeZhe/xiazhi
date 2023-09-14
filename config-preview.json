@@ -242,5 +242,31 @@
       }
     ],
     "collapsed": true
+  },
+  {
+    "text": "绘画",
+    "items": [
+      {
+        "text": "涂鸦",
+        "items": [
+          {
+            "text": "序言",
+            "link": "\\docs\\05-绘画\\01-涂鸦\\00-序言.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "AI绘画",
+        "items": [
+          {
+            "text": "记录01",
+            "link": "\\docs\\05-绘画\\02-AI绘画\\01-记录01.md"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
   }
 ]
