@@ -5,14 +5,14 @@
     "serve": "vitepress serve src"
   },
   "devDependencies": {
-    "glob": "^10.3.3",
+    "glob": "^10.3.4",
     "prettier-plugin-md-nocjsp": "^1.5.1",
-    "sass": "^1.65.1",
-    "vitepress": "1.0.0-rc.4"
+    "sass": "^1.67.0",
+    "vitepress": "1.0.0-rc.13"
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
-    "element-plus": "^2.3.9",
+    "element-plus": "^2.3.12",
     "vue": "^3.3.4"
   }
 }
