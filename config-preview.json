@@ -223,6 +223,16 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "无题篇",
+        "items": [
+          {
+            "text": "早起",
+            "link": "\\docs\\03-杂记\\06-无题篇\\早起.md"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
