@@ -257,6 +257,16 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "渔歌子",
+        "items": [
+          {
+            "text": "正篇",
+            "link": "\\docs\\04-故事\\01-渔歌子\\01-正篇.md"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
