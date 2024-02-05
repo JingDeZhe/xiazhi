@@ -26,7 +26,7 @@ export function generateSidebar() {
       })
       t.set(title, {
         text: title,
-        link: join(DOCS_DIR, file),
+        link: join(DOCS_DIR, file).replace(/\\/g, '/'),
       })
     })
     const fn = (title, value, items) => {
