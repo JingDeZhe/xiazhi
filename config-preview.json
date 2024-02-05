@@ -223,6 +223,16 @@
           }
         ],
         "collapsed": true
+      },
+      {
+        "text": "无题篇",
+        "items": [
+          {
+            "text": "早起",
+            "link": "\\docs\\03-杂记\\06-无题篇\\早起.md"
+          }
+        ],
+        "collapsed": true
       }
     ],
     "collapsed": true
@@ -236,6 +246,16 @@
           {
             "text": "序章",
             "link": "/docs/04-故事/00-女主和小女生/00-序章.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "渔歌子",
+        "items": [
+          {
+            "text": "正篇",
+            "link": "\\docs\\04-故事\\01-渔歌子\\01-正篇.md"
           }
         ],
         "collapsed": true
