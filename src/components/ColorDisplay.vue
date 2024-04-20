@@ -14,7 +14,7 @@
 
 <script setup>
 import { reactive, onMounted } from 'vue'
-import { showTip } from './util'
+import { http, showTip } from '../utils'
 const props = defineProps({
   src: {
     type: String,
@@ -24,8 +24,9 @@ const props = defineProps({
 
 const colorList = reactive([])
 onMounted(() => {
-  fetch(props.src)
-    .then((res) => res.json())
+  http
+    .get(props.src)
+    .json()
     .then((data) => {
       colorList.push(...data)
     })

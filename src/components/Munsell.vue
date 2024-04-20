@@ -41,23 +41,35 @@
 
 <script setup>
 import chroma from 'chroma-js'
-import { computed, reactive } from 'vue'
-import { colors, rounds } from '../data/munsellData'
-import { showTip } from './util'
+import { computed, reactive, ref } from 'vue'
+import { http, showTip } from '../utils'
 
-const activeColor = reactive({
+const colors = ref([])
+const rounds = ref([])
+const ready = ref(false)
+
+http
+  .get('data/munsellData.json')
+  .json()
+  .then((d) => {
+    colors.value = d.colors
+    rounds.value = d.rounds
+    ready.value = true
+  })
+
+const activeColor = ref({
   name: '',
   color: '',
 })
-const currentColor = reactive({
+const currentColor = ref({
   name: '5R',
   color: '#F4083D',
 })
 const currentColors = computed(() => {
-  return colors[currentColor.name] || []
+  return colors.value[currentColor.value.name] || []
 })
 function getPos(index) {
-  const t = rounds.length
+  const t = rounds.value.length
   return {
     top: Math.sin((index * 2 * Math.PI) / t) * 47 + 47 + '%',
     left: Math.cos((index * 2 * Math.PI) / t) * 47 + 47 + '%',

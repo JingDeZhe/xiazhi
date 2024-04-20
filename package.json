@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "chroma-js": "^2.4.2",
+    "ky": "^1.2.3",
     "sweetalert2": "^11.10.8"
   }
 }
