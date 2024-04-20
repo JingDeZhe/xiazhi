@@ -14,7 +14,7 @@
 
 <script setup>
 import { reactive, onMounted } from 'vue'
-import { ElMessage } from 'element-plus'
+import { showTip } from './util'
 const props = defineProps({
   src: {
     type: String,
@@ -41,7 +41,7 @@ function getTextColor(rgb) {
 
 function copy(str) {
   window.navigator.clipboard.writeText(str)
-  ElMessage.success(`已复制颜色: ${str}`)
+  showTip(`已复制颜色：${str}`)
 }
 </script>
 

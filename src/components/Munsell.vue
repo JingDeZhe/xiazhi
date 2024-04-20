@@ -42,8 +42,8 @@
 <script setup>
 import chroma from 'chroma-js'
 import { computed, reactive } from 'vue'
-import { ElMessage } from 'element-plus'
 import { colors, rounds } from '../data/munsellData'
+import { showTip } from './util'
 
 const activeColor = reactive({
   name: '',
@@ -67,7 +67,7 @@ function getPos(index) {
 function copyColor(color) {
   color = chroma(color).hex()
   window.navigator.clipboard.writeText(color)
-  ElMessage.success(`已复制颜色: ${color}`)
+  showTip(`已复制颜色：${color}`)
 }
 </script>
 

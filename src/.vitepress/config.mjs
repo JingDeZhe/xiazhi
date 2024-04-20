@@ -16,6 +16,9 @@ const config = defineConfig({
   themeConfig: {
     sidebar: generateSidebar(),
   },
+  vite: {
+    server: { port: 5174 },
+  },
 })
 
 export default config

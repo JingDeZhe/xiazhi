@@ -1,9 +1,19 @@
 @font-face {
   font-family: lxgw;
-  src: local('LXGW WenKai Mono'),
-    url('https://lotusloli-1258290249.cos.ap-guangzhou.myqcloud.com/store/fonts/lxgw-wenkai-lite-v1.300/LXGWWenKaiLite-Regular.ttf');
+  src: local('LXGW WenKai'),
+    url('https://lotusloli-1258290249.cos.ap-guangzhou.myqcloud.com/store/fonts/LXGWWenKaiGBScreen.woff2');
 }
 
 body {
   font-family: lxgw, serif;
+}
+
+code {
+  font-family: 'Fira Code', monospace;
+}
+
+@supports (font-variation-settings: normal) {
+  code {
+    font-family: 'Fira Code VF', monospace;
+  }
 }
