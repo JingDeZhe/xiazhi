@@ -9,11 +9,11 @@ body {
 }
 
 code {
-  font-family: 'Fira Code', monospace;
+  font-family: 'Fira Code', lxgw, monospace;
 }
 
 @supports (font-variation-settings: normal) {
   code {
-    font-family: 'Fira Code VF', monospace;
+    font-family: 'Fira Code VF', lxgw, monospace;
   }
 }

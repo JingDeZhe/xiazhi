@@ -12,6 +12,13 @@ const config = defineConfig({
       'link',
       { rel: 'icon', type: 'image/x-icon', href: '/xiazhi/favicon.ico' },
     ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdn.bootcdn.net/ajax/libs/firacode/6.2.0/fira_code.css',
+      },
+    ],
   ],
   themeConfig: {
     sidebar: generateSidebar(),
