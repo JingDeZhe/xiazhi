@@ -28,6 +28,54 @@
     "collapsed": true
   },
   {
+    "text": "逻辑",
+    "items": [
+      {
+        "text": "数据结构和算法",
+        "items": [
+          {
+            "text": "链表",
+            "link": "/docs/02-逻辑/01-数据结构和算法/001-链表.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "函数式编程",
+        "items": [
+          {
+            "text": "什么是Monad",
+            "link": "/docs/02-逻辑/10-函数式编程/001-什么是Monad.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "杂记",
+        "items": [
+          {
+            "text": "如何将网站升级到http2",
+            "link": "/docs/02-逻辑/90-杂记/01-如何将网站升级到http2.md"
+          },
+          {
+            "text": "如何生成自签名的SSL证书",
+            "link": "/docs/02-逻辑/90-杂记/02-如何生成自签名的SSL证书.md"
+          },
+          {
+            "text": "如何用CSS使多行列表最后一行对齐",
+            "link": "/docs/02-逻辑/90-杂记/03-如何用CSS使多行列表最后一行对齐.md"
+          },
+          {
+            "text": "原型链是什么",
+            "link": "/docs/02-逻辑/90-杂记/04-原型链是什么.md"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
+  },
+  {
     "text": "杂记",
     "items": [
       {
