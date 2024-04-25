@@ -3,15 +3,12 @@ import { defineConfig } from 'vitepress'
 import { generateSidebar } from './util/generate.mjs'
 
 const config = defineConfig({
-  base: '/xiazhi/',
+  base: '/',
   outDir: '../dist',
   lang: 'zh-CN',
   title: '夏至',
   head: [
-    [
-      'link',
-      { rel: 'icon', type: 'image/x-icon', href: '/xiazhi/favicon.ico' },
-    ],
+    ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     [
       'link',
       {
