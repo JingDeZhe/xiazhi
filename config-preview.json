@@ -322,6 +322,32 @@
     "collapsed": true
   },
   {
+    "text": "数物",
+    "items": [
+      {
+        "text": "数学",
+        "items": [
+          {
+            "text": "草稿",
+            "link": "/docs/20-数物/10-数学/00-草稿.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "物理",
+        "items": [
+          {
+            "text": "草稿",
+            "link": "/docs/20-数物/20-物理/00-草稿.md"
+          }
+        ],
+        "collapsed": true
+      }
+    ],
+    "collapsed": true
+  },
+  {
     "text": "草稿",
     "items": [
       {

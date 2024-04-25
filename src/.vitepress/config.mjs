@@ -20,6 +20,9 @@ const config = defineConfig({
   themeConfig: {
     sidebar: generateSidebar(),
   },
+  markdown: {
+    math: true,
+  },
   vite: {
     server: { port: 5174 },
   },
