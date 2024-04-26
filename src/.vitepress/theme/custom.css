@@ -17,6 +17,8 @@ code {
   }
 }
 
+em[c],
 .text-em {
+  font-style: normal;
   color: #d19a5e;
 }
