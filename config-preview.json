@@ -78,6 +78,10 @@
         "text": "Javascript",
         "items": [
           {
+            "text": "油猴脚本",
+            "link": "/docs/02-逻辑/50-Javascript/01-油猴脚本.md"
+          },
+          {
             "text": "What the fuxx JS",
             "link": "/docs/02-逻辑/50-Javascript/10-What the fuxx JS.md"
           }
