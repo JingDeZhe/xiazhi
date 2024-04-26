@@ -75,6 +75,16 @@
         "collapsed": true
       },
       {
+        "text": "Javascript",
+        "items": [
+          {
+            "text": "What the fuxx JS",
+            "link": "/docs/02-逻辑/50-Javascript/10-What the fuxx JS.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
         "text": "杂记",
         "items": [
           {
