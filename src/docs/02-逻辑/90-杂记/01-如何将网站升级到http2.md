@@ -89,7 +89,7 @@ http2
 
 如此便可以启用 http/2 了。
 
-![alt text](image.png)
+![alt text](assets/image.png)
 
 ```text
 Content-Length: 13
@@ -106,5 +106,5 @@ HTTP/2 使用了 HPACK 算法对头部进行压缩，以提高传输效率。因
 :::info 不安全的证书
 注意到即使是使用了自签名证书，Chrome 依旧会提示网站不安全，这点在测试时无需在意，因为我们的证书是自签名的，没有权威性。
 
-![alt text](image-1.png)
+![alt text](assets/image-1.png)
 :::

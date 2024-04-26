@@ -1,7 +1,6 @@
 @font-face {
   font-family: lxgw;
-  src: local('LXGW WenKai'),
-    url('https://store-1258290249.cos.ap-guangzhou.myqcloud.com/fonts/LXGWWenKaiGBScreen.woff2');
+  src: local('LXGW WenKai'), url('/fonts/LXGWWenKaiGBScreen.woff2');
 }
 
 body {
