@@ -39,6 +39,30 @@
         "collapsed": true
       },
       {
+        "text": "设定",
+        "items": [
+          {
+            "text": "前言",
+            "link": "/docs/01-记录/70-设定/01-前言.md"
+          },
+          {
+            "text": "黎明之剑",
+            "items": [
+              {
+                "text": "草稿",
+                "link": "/docs/01-记录/70-设定/10-黎明之剑/00-草稿.md"
+              },
+              {
+                "text": "世界观",
+                "link": "/docs/01-记录/70-设定/10-黎明之剑/01-世界观.md"
+              }
+            ],
+            "collapsed": true
+          }
+        ],
+        "collapsed": true
+      },
+      {
         "text": "转载",
         "items": [
           {
