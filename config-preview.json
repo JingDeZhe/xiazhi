@@ -83,17 +83,27 @@
         "items": [
           {
             "text": "链表",
-            "link": "/docs/02-逻辑/01-数据结构和算法/001-链表.md"
+            "link": "/docs/02-逻辑/10-数据结构和算法/001-链表.md"
           }
         ],
         "collapsed": true
       },
       {
-        "text": "函数式编程",
+        "text": "设计模式",
         "items": [
           {
-            "text": "什么是Monad",
-            "link": "/docs/02-逻辑/10-函数式编程/001-什么是Monad.md"
+            "text": "简述",
+            "link": "/docs/02-逻辑/20-设计模式/02-简述.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "编程范式",
+        "items": [
+          {
+            "text": "简述",
+            "link": "/docs/02-逻辑/30-编程范式/02-简述.md"
           }
         ],
         "collapsed": true
@@ -108,6 +118,16 @@
           {
             "text": "What the fuxx JS",
             "link": "/docs/02-逻辑/50-Javascript/10-What the fuxx JS.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "脚本",
+        "items": [
+          {
+            "text": "Power Shell常见命令",
+            "link": "/docs/02-逻辑/80-脚本/16-Power Shell常见命令.md"
           }
         ],
         "collapsed": true
