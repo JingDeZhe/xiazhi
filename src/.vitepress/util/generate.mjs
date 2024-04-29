@@ -16,7 +16,7 @@ export function generateSidebar() {
     const menuMap = new Map()
     files.forEach((file) => {
       const info = parse(file)
-      const title = info.name.replace(/^[\d\-]*/, '')
+      const title = info.name.replace(/^[\d\.\-]*/, '')
       const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
       let t = menuMap
       dirs.forEach((dir) => {
