@@ -39,6 +39,16 @@
         "collapsed": true
       },
       {
+        "text": "参考",
+        "items": [
+          {
+            "text": "常见Unicode符号",
+            "link": "/docs/01-记录/60-参考/10-常见Unicode符号.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
         "text": "设定",
         "items": [
           {
@@ -48,10 +58,6 @@
           {
             "text": "黎明之剑",
             "items": [
-              {
-                "text": "草稿",
-                "link": "/docs/01-记录/70-设定/10-黎明之剑/00-草稿.md"
-              },
               {
                 "text": "世界观",
                 "link": "/docs/01-记录/70-设定/10-黎明之剑/01-世界观.md"
@@ -83,17 +89,43 @@
         "items": [
           {
             "text": "链表",
-            "link": "/docs/02-逻辑/01-数据结构和算法/001-链表.md"
+            "link": "/docs/02-逻辑/10-数据结构和算法/001-链表.md"
           }
         ],
         "collapsed": true
       },
       {
-        "text": "函数式编程",
+        "text": "设计模式",
         "items": [
           {
-            "text": "什么是Monad",
-            "link": "/docs/02-逻辑/10-函数式编程/001-什么是Monad.md"
+            "text": "简述",
+            "link": "/docs/02-逻辑/20-设计模式/02-简述.md"
+          },
+          {
+            "text": "单例模式",
+            "link": "/docs/02-逻辑/20-设计模式/10-单例模式.md"
+          },
+          {
+            "text": "工厂方法",
+            "link": "/docs/02-逻辑/20-设计模式/12-工厂方法.md"
+          },
+          {
+            "text": "抽象工厂",
+            "link": "/docs/02-逻辑/20-设计模式/14-抽象工厂.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "编程范式",
+        "items": [
+          {
+            "text": "简述",
+            "link": "/docs/02-逻辑/30-编程范式/02-简述.md"
+          },
+          {
+            "text": "函数式编程",
+            "link": "/docs/02-逻辑/30-编程范式/10-函数式编程.md"
           }
         ],
         "collapsed": true
@@ -106,8 +138,22 @@
             "link": "/docs/02-逻辑/50-Javascript/01-油猴脚本.md"
           },
           {
+            "text": "原型链是什么",
+            "link": "/docs/02-逻辑/50-Javascript/04-原型链是什么.md"
+          },
+          {
             "text": "What the fuxx JS",
             "link": "/docs/02-逻辑/50-Javascript/10-What the fuxx JS.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
+        "text": "脚本",
+        "items": [
+          {
+            "text": "Power Shell常见命令",
+            "link": "/docs/02-逻辑/80-脚本/16-Power Shell常见命令.md"
           }
         ],
         "collapsed": true
@@ -126,10 +172,6 @@
           {
             "text": "如何用CSS使多行列表最后一行对齐",
             "link": "/docs/02-逻辑/90-杂记/03-如何用CSS使多行列表最后一行对齐.md"
-          },
-          {
-            "text": "原型链是什么",
-            "link": "/docs/02-逻辑/90-杂记/04-原型链是什么.md"
           },
           {
             "text": "孟塞尔颜色系统",
