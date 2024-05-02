@@ -2,5 +2,3 @@ node_modules
 dist
 cache
 config-preview.json
-src/public/image
-src/public/data
