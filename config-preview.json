@@ -56,11 +56,35 @@
             "link": "/docs/01-记录/70-设定/01-前言.md"
           },
           {
+            "text": "门类",
+            "items": [
+              {
+                "text": "太空歌剧",
+                "link": "/docs/01-记录/70-设定/05-门类/50-太空歌剧.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
             "text": "黎明之剑",
             "items": [
               {
                 "text": "世界观",
                 "link": "/docs/01-记录/70-设定/10-黎明之剑/01-世界观.md"
+              }
+            ],
+            "collapsed": true
+          },
+          {
+            "text": "道诡异仙",
+            "items": [
+              {
+                "text": "草稿",
+                "link": "/docs/01-记录/70-设定/11-道诡异仙/00-草稿.md"
+              },
+              {
+                "text": "世界观",
+                "link": "/docs/01-记录/70-设定/11-道诡异仙/10-世界观.md"
               }
             ],
             "collapsed": true
@@ -149,6 +173,16 @@
         "collapsed": true
       },
       {
+        "text": "Typescript",
+        "items": [
+          {
+            "text": "类型体操01",
+            "link": "/docs/02-逻辑/51-Typescript/10-类型体操01.md"
+          }
+        ],
+        "collapsed": true
+      },
+      {
         "text": "脚本",
         "items": [
           {
@@ -176,6 +210,10 @@
           {
             "text": "孟塞尔颜色系统",
             "link": "/docs/02-逻辑/90-杂记/05-孟塞尔颜色系统.md"
+          },
+          {
+            "text": "乱序字",
+            "link": "/docs/02-逻辑/90-杂记/06-乱序字.md"
           }
         ],
         "collapsed": true

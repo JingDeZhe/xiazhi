@@ -1,7 +1,7 @@
 import Swal from 'sweetalert2'
 import ky from 'ky'
 
-export function showTip(msg) {
+export const showTip = (msg) => {
   Swal.fire({
     position: 'top',
     text: msg,
