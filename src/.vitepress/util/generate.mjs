@@ -20,7 +20,7 @@ export function generateSidebar() {
       const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
       let t = menuMap
       dirs.forEach((dir) => {
-        dir = dir.replace(/^[\d\-]*/, '')
+        dir = dir.replace(/^[\d\.\-]*/, '')
         if (!t.has(dir)) t.set(dir, new Map())
         t = t.get(dir)
       })
