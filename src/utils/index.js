@@ -10,6 +10,11 @@ export const showTip = (msg) => {
   })
 }
 
+export const isAbsoluteUrl = (url) => {
+  var absoluteUrlPattern = /^(ftp|http|https):\/\/[^ "]+$/
+  return absoluteUrlPattern.test(url)
+}
+
 export const http = ky.create({
   prefixUrl: import.meta.env.PROD
     ? 'https://store-1258290249.cos.ap-guangzhou.myqcloud.com/'
