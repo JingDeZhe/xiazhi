@@ -55,9 +55,9 @@ export function generateSidebar() {
 }
 
 //#region test
-fs.writeFile(
-  'config-preview.json',
-  JSON.stringify(generateSidebar(), null, '  '),
-  (err) => {}
-)
+// fs.writeFile(
+//   'config-preview.json',
+//   JSON.stringify(generateSidebar(), null, '  '),
+//   (err) => {}
+// )
 //#endregion
