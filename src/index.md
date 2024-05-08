@@ -2,23 +2,21 @@
 layout: home
 
 hero:
-  name: Summer Solstice
-  tagline: I saw a deer come out of the forest
+  name: 夏至
+  tagline: 我看见一头鹿从林中走出
   actions:
     - theme: alt
-      text: Follow 🦌
+      text: 跟随
       link: /docs/00-序言/01-前言
 
 features:
   - icon: 😶
-    title: Tell some stories
-    details:
-      Everyone has some stories to tell, just like when the sun falls on the
-      shade of a tree, everyone wants to go down and have a rest.
+    title: 故事
+    details: 就像阳光落入盛夏的林荫，引来休息的众人
   - icon: 🪶
-    title: Write some code
-    details: The human mind is not suitable for such overly mechanized thinking, but it also emits some interest sometimes.
+    title: 代码
+    details: 人的思维并不适合写代码，但偶尔也算是有趣
   - icon: 🐝
-    title: Share something
-    details: If you see something you like, do you want to keep it in mind?
+    title: 分享
+    details: 当你遇见开心之事
 ---
