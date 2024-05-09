@@ -1,5 +1,6 @@
 import Swal from 'sweetalert2'
 import ky from 'ky'
+import { nanoid } from 'nanoid'
 
 export const showTip = (msg) => {
   Swal.fire({
@@ -20,3 +21,5 @@ export const http = ky.create({
     ? 'https://store-1258290249.cos.ap-guangzhou.myqcloud.com/'
     : import.meta.env.BASE_URL,
 })
+
+export const uid = () => nanoid()

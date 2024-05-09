@@ -1,6 +1,7 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import { _picture } from './preData'
+import { uid } from '@/utils'
 
 const picture = ref(_picture)
 
@@ -16,13 +17,15 @@ const canvas = ref()
 const map100 = (x1, x2, len) => ((x1 - x2) / len) * 100
 
 const handleCanvasClick = (e) => {
-  const { x, y, width, height } = canvas.value.getBoundingClientRect()
+  activeFragment.value = null
+  const { x, y, width: sl } = canvas.value.getBoundingClientRect()
   const { x: mx, y: my } = e
 
   if (tmpFragmentPoints.value.length < 3) {
-    tmpFragmentPoints.value.push([map100(mx, x, width), map100(my, y, height)])
+    tmpFragmentPoints.value.push([map100(mx, x, sl), map100(my, y, sl)])
     if (tmpFragmentPoints.value.length === 3) {
       picture.value.fragments.push({
+        id: uid(),
         fill: '#292C34',
         points: [...tmpFragmentPoints.value.splice(0)],
       })
@@ -31,8 +34,27 @@ const handleCanvasClick = (e) => {
 }
 
 const handleSelectFragment = (e) => {
-  console.log(e.target)
+  if (tmpFragmentPoints.value.length !== 0) {
+  } else {
+    const { id } = e.target.dataset
+    const index = picture.value.fragments.findIndex((v) => v.id === id)
+    if (index !== -1) {
+      const t = picture.value.fragments.splice(index, 1)[0]
+      picture.value.fragments.push(t)
+      activeFragment.value = t
+    }
+    e.stopPropagation()
+  }
 }
+
+const px1v = ref(1)
+onMounted(() => {
+  nextTick(() => {
+    const { width } = canvas.value.getBoundingClientRect()
+    px1v.value = 100 / width
+    canvas.value.style.setProperty('--px1v', px1v.value)
+  })
+})
 </script>
 
 <template>
@@ -42,7 +64,9 @@ const handleSelectFragment = (e) => {
         v-for="p in picture.fragments"
         :points="getPoints(p)"
         :fill="p.fill"
-        @click.stop="handleSelectFragment"
+        @click="handleSelectFragment"
+        :data-id="p.id"
+        :class="{ active: activeFragment === p }"
       ></polygon>
       <circle
         v-for="c in tmpFragmentPoints"
@@ -63,8 +87,16 @@ const handleSelectFragment = (e) => {
   overflow: hidden;
 
   > svg {
+    --px1v: 1px;
     width: 100%;
     height: 100%;
+
+    polygon {
+      &.active {
+        stroke-width: calc(2 * var(--px1v));
+        stroke: #303030;
+      }
+    }
   }
 }
 </style>

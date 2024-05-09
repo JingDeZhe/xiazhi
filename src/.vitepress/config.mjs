@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { fileURLToPath, URL } from 'node:url'
 
 import { generateSidebar } from './util/generate.mjs'
 
@@ -25,6 +26,11 @@ const config = defineConfig({
   },
   vite: {
     server: { port: 5174 },
+    resolve: {
+      alias: {
+        '@': fileURLToPath(new URL('../', import.meta.url)),
+      },
+    },
   },
 })
 
