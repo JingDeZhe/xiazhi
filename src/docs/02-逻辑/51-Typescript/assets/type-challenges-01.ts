@@ -24,3 +24,5 @@ type MyPick<T, K extends keyof T> = {
 }
 
 type T4 = Pick<Person, 'age' | 'gender'>
+
+export {}
