@@ -35,4 +35,4 @@ pyftsubset LXGWWenKaiGBScreen.ttf --unicodes-file=sc_unicode.txt --with-zopfli -
 
 <my-a href="/data/sc_unicode.txt" download="sc_unicode.txt">sc_unicode.txt</my-a>
 <br>
-<my-a href="/font/LXGWWenKaiGBScreen.woff2" download="LXGWWenKaiGBScreen.woff2">LXGWWenKaiGBScreen.woff2</my-a>
+<my-a href="/fonts/LXGWWenKaiGBScreen.woff2" download="LXGWWenKaiGBScreen.woff2">LXGWWenKaiGBScreen.woff2</my-a>
