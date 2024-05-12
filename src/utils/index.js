@@ -1,6 +1,7 @@
 import Swal from 'sweetalert2'
 import ky from 'ky'
 import { nanoid } from 'nanoid'
+import { withBase } from 'vitepress'
 
 export const showTip = (msg) => {
   Swal.fire({
@@ -16,10 +17,15 @@ export const isAbsoluteUrl = (url) => {
   return absoluteUrlPattern.test(url)
 }
 
+const STORE_PATH = 'https://store-1258290249.cos.ap-guangzhou.myqcloud.com/'
 export const http = ky.create({
-  prefixUrl: import.meta.env.PROD
-    ? 'https://store-1258290249.cos.ap-guangzhou.myqcloud.com/'
-    : import.meta.env.BASE_URL,
+  prefixUrl: import.meta.env.PROD ? STORE_PATH : import.meta.env.BASE_URL,
 })
+
+export const getSrc2 = (src, fit = false) => {
+  if (isAbsoluteUrl(src)) return src
+  if (!fit) return withBase(src)
+  return import.meta.env.PROD ? `${STORE_PATH}${src}` : withBase(src)
+}
 
 export const uid = () => nanoid()
