@@ -2,6 +2,7 @@
   "include": ["./src", "./src/.vitepress"],
   "compilerOptions": {
     "baseUrl": ".",
+    "target": "ESNext",
     "paths": {
       "@/*": ["./src/*"]
     }

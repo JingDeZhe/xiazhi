@@ -22,3 +22,11 @@ em[c],
   font-style: normal;
   color: #d19a5e;
 }
+
+.ipt {
+  display: block;
+  width: 100%;
+  border: 1px solid #333;
+  padding: 0.2rem 0.4rem;
+  border-radius: 2px;
+}
