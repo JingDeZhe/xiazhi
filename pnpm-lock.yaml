@@ -14,6 +14,9 @@ importers:
       chroma-js:
         specifier: ^2.4.2
         version: 2.4.2
+      glightbox:
+        specifier: ^3.3.0
+        version: 3.3.0
       iframe-resizer:
         specifier: ^4.3.11
         version: 4.3.11
@@ -663,6 +666,9 @@ packages:
     resolution: {integrity: sha512-5xoDfX+fL7faATnagmWPpbFtwh/R77WmMMqqHGS65C3vvB0YHrgF+B1YmZ3441tMj5n63k0212XNoJwzlhffQw==}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
+
+  glightbox@3.3.0:
+    resolution: {integrity: sha512-SJukatHBZZ/POMOpLUQ6/dhXf/wJTDx1wZ/FwApjseXw2WrRj3Ze9DzNCFYzca0oU7RjXQhi9o02aIZ9SuCz1A==}
 
   glob-parent@5.1.2:
     resolution: {integrity: sha512-AOIgSQCepiJYwP3ARnGx+5VnTu2HBYdzbGP45eLw1vr3zB3vZLeyed1sC9hnbcOc9/SrMyM5RPQrkGz4aS9Zow==}
@@ -1593,6 +1599,8 @@ snapshots:
 
   fsevents@2.3.3:
     optional: true
+
+  glightbox@3.3.0: {}
 
   glob-parent@5.1.2:
     dependencies:
