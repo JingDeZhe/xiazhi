@@ -20,6 +20,13 @@ const config = defineConfig({
   ],
   themeConfig: {
     sidebar: generateSidebar(),
+    outlineTitle: '导航',
+    docFooter: {
+      prev: '上篇',
+      next: '下篇',
+    },
+    darkModeSwitchTitle: '暗色模式',
+    lightModeSwitchTitle: '浅色模式',
   },
   markdown: {
     math: true,
