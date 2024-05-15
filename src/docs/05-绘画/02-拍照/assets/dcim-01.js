@@ -1,10 +1,13 @@
 export const list = [
   {
     href: 'IMG_20231125_154956.jpg',
+    description: '山间红叶',
     type: 'image',
   },
   {
     href: 'IMG_20231125_160015.jpg',
+    descPosition: 'top',
+    description: '池塘残荷',
     type: 'image',
   },
   {
