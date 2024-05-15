@@ -17,6 +17,13 @@ const config = defineConfig({
         href: 'https://cdn.bootcdn.net/ajax/libs/firacode/6.2.0/fira_code.css',
       },
     ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css',
+      },
+    ],
   ],
   themeConfig: {
     sidebar: generateSidebar(),

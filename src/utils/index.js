@@ -22,6 +22,10 @@ export const http = ky.create({
   prefixUrl: import.meta.env.PROD ? STORE_PATH : import.meta.env.BASE_URL,
 })
 
+export const getStoreUrl = (url) => {
+  return `${STORE_PATH}${url}`
+}
+
 export const getSrc2 = (src, fit = false) => {
   if (isAbsoluteUrl(src)) return src
   if (!fit) return withBase(src)
