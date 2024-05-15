@@ -30,3 +30,10 @@ em[c],
   padding: 0.2rem 0.4rem;
   border-radius: 2px;
 }
+
+.excerpt div[c] {
+  border: 1px solid var(--vp-c-divider);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
