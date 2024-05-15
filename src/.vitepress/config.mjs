@@ -27,6 +27,9 @@ const config = defineConfig({
     },
     darkModeSwitchTitle: '暗色模式',
     lightModeSwitchTitle: '浅色模式',
+    outline: {
+      level: [2, 3],
+    },
   },
   markdown: {
     math: true,
