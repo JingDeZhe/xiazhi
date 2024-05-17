@@ -2,6 +2,7 @@ import { globSync } from 'glob'
 import fs from 'node:fs'
 import { dirname, join, parse } from 'node:path'
 import { fileURLToPath } from 'node:url'
+import { compare } from './sort.mjs'
 
 const DOCS_DIR = '/docs/'
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -11,11 +12,17 @@ export function generateSidebar() {
   try {
     const files = globSync('**/*.@(md|html)', {
       cwd: resolve(`../..${DOCS_DIR}`),
+    }).map((v) => {
+      return {
+        path: v,
+        ...parse(v),
+      }
     })
-    files.sort(new Intl.Collator('zh-CN').compare)
+    files.sort((a, b) => {
+      return new Intl.Collator('zh-CN').compare(a.path, b.path)
+    })
     const menuMap = new Map()
-    files.forEach((file) => {
-      const info = parse(file)
+    files.forEach((info) => {
       const title = info.name.replace(/^[\d\.\-]*/, '')
       const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
       let t = menuMap
@@ -26,7 +33,7 @@ export function generateSidebar() {
       })
       t.set(title, {
         text: title,
-        link: join(DOCS_DIR, file).replace(/\\/g, '/'),
+        link: join(DOCS_DIR, info.path).replace(/\\/g, '/'),
       })
     })
     const fn = (title, value, items) => {
@@ -47,8 +54,9 @@ export function generateSidebar() {
 
     const menu = []
     fn('_', menuMap, menu)
+    const sidebar = menu[0].items
 
-    return menu[0].items
+    return sidebar
   } catch (err) {
     return err
   }
