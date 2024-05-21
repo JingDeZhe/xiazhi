@@ -37,6 +37,10 @@ const config = defineConfig({
     outline: {
       level: [2, 3],
     },
+    footer: {
+      message:
+        '<a href="https://beian.miit.gov.cn/" target="_blank">鄂ICP备19001457号-1</a>',
+    },
   },
   markdown: {
     math: true,
