@@ -7,7 +7,7 @@ const config = defineConfig({
   base: '/',
   outDir: '../dist',
   lang: 'zh-CN',
-  title: '夏至',
+  title: '读书笔记',
   head: [
     ['link', { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
     [
