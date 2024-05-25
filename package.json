@@ -19,6 +19,7 @@
     "ky": "^1.2.3",
     "nanoid": "^5.0.7",
     "sweetalert2": "^11.10.8",
+    "tippy.js": "^6.3.7",
     "vue": "^3.4.27"
   },
   "packageManager": "pnpm@9.1.1"

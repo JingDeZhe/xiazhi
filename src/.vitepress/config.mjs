@@ -24,6 +24,13 @@ const config = defineConfig({
         href: 'https://cdnjs.cloudflare.com/ajax/libs/glightbox/3.3.0/css/glightbox.min.css',
       },
     ],
+    [
+      'link',
+      {
+        rel: 'stylesheet',
+        href: 'https://cdnjs.cloudflare.com/ajax/libs/hint.css/3.0.0/hint.min.css',
+      },
+    ],
   ],
   themeConfig: {
     sidebar: generateSidebar(),
