@@ -33,6 +33,9 @@ importers:
         specifier: ^3.4.27
         version: 3.4.27
     devDependencies:
+      '@types/animejs':
+        specifier: ^3.1.12
+        version: 3.1.12
       glob:
         specifier: ^10.3.12
         version: 10.3.12
@@ -391,6 +394,9 @@ packages:
 
   '@shikijs/transformers@1.3.0':
     resolution: {integrity: sha512-3mlpg2I9CjhjE96dEWQOGeCWoPcyTov3s4aAsHmgvnTHa8MBknEnCQy8/xivJPSpD+olqOqIEoHnLfbNJK29AA==}
+
+  '@types/animejs@3.1.12':
+    resolution: {integrity: sha512-fpdH+ZtlO0kqjTOqRaBdsEmvpRNOayI8k4EVkEtitL5l6wducDOXk0rgQgfZqWf/ZX9DzXrHf257S5i9xTcISQ==}
 
   '@types/estree@1.0.5':
     resolution: {integrity: sha512-/kYRxGDLWzHOB7q+wtSUQlFrtcdUccpfy+X+9iMBpHK8QLLhx2wIPYuS5DYtR9Wa/YlZAbIovy7qVdB1Aq6Lyw==}
@@ -1282,6 +1288,8 @@ snapshots:
   '@shikijs/transformers@1.3.0':
     dependencies:
       shiki: 1.3.0
+
+  '@types/animejs@3.1.12': {}
 
   '@types/estree@1.0.5': {}
 
