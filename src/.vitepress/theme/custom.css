@@ -37,3 +37,9 @@ em[c],
   border-radius: 5px;
   margin-bottom: 1rem;
 }
+
+.content-container iframe {
+  display: block;
+  width: 100%;
+  margin: 1rem 0;
+}
