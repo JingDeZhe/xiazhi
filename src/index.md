@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: 夏至
-  tagline: 我看见一头鹿从林中走出
+  tagline: 我见一鹿，于林中走出
   actions:
     - theme: alt
       text: 跟随
