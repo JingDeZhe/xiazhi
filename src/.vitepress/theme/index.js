@@ -1,6 +1,8 @@
 import DefaultTheme from 'vitepress/theme'
 import './custom.css'
+import 'virtual:uno.css'
 import 'sweetalert2/src/sweetalert2.scss'
+
 import MyIframe from './components/MyIframe.vue'
 import MyA from './components/MyA.vue'
 import MyGallary from './components/MyGallary.vue'

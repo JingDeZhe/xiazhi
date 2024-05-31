@@ -9,9 +9,10 @@ const src = computed(() => {
 </script>
 
 <template>
-  <div>
-    <input type="number" v-model="index" />
-    <img :src="src" alt="avatar" />
+  <div class="avatar-gallary space-y-2">
+    <input type="range" min="1" max="199" step="1" v-model="index" />
+    <div>序号：{{ index }}</div>
+    <img class="rounded w-[200px]" :src="src" alt="avatar" />
   </div>
 </template>
 
