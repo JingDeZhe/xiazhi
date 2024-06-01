@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 import { fileURLToPath, URL } from 'node:url'
-
+import UnoCSS from 'unocss/vite'
 import { generateSidebar } from './util/generate.mjs'
 
 const config = defineConfig({
@@ -54,6 +54,7 @@ const config = defineConfig({
   },
   vite: {
     server: { port: 5174 },
+    plugins: [UnoCSS()],
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('../', import.meta.url)),
