@@ -1,6 +1,6 @@
 <script setup>
 import { isAbsoluteUrl } from '../../../utils'
-import { iframeResize } from 'iframe-resizer'
+import IframeResizer from '@iframe-resizer/vue/sfc'
 import { ref, computed, onMounted } from 'vue'
 const props = defineProps({ src: { type: String, required: true } })
 
@@ -10,21 +10,14 @@ const src2 = computed(() => {
     ? `https://jingdezhe.github.io/refer-1/${props.src}`
     : `http://localhost:5177/${props.src}`
 })
-const refIframe = ref()
-
-onMounted(() => {
-  if (isAbsoluteUrl(props.src)) return
-  iframeResize({ log: false, checkOrigin: false }, refIframe.value)
-})
 </script>
 
 <template>
-  <iframe
+  <IframeResizer
     class="my-iframe"
     :src="src2"
     frameborder="0"
-    ref="refIframe"
-  ></iframe>
+  ></IframeResizer>
 </template>
 
 <style lang="scss">
