@@ -1,0 +1,37 @@
+单一职责
+
+敌人管理器
+定时器
+自动开启
+timer.func.connect(fn)
+
+防御编程
+
+组合优于继承
+TAU
+randf_range
+Vector2.RIGHT.rotated
+scene.instantiate()
+
+自动生成敌人：
+使用定时器在玩家周围按时间间隔生成敌人
+SPAWN_RADIUS
+
+manager
+
+PackedScene
+
+避免空方法
+
+移动优化
+将直接赋值变成缓动赋值
+
+当前速度 -> 目标速度
+
+敌人重叠问题：
+将敌人放在collision layer里，但不要和
+move_and_slide()
+motion mode: grounded floating
+arena_time
+canvas layer
+margin container
