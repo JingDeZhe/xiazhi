@@ -4,5 +4,9 @@
     "activityBar.background": "#093049",
     "titleBar.activeBackground": "#0D4366",
     "titleBar.activeForeground": "#F7FBFE"
-  }
+  },
+  "marscode.codeCompletionPro": {
+    "enableCodeCompletionPro": false
+  },
+  "marscode.enableInlineCommand": false
 }

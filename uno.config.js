@@ -1,6 +1,11 @@
-import transformerCompileClass from '@unocss/transformer-compile-class'
-import transformerDirectives from '@unocss/transformer-directives'
-import { defineConfig, presetUno, presetIcons } from 'unocss'
+import {
+  defineConfig,
+  presetUno,
+  presetIcons,
+  transformerCompileClass,
+  transformerDirectives,
+  transformerVariantGroup,
+} from 'unocss'
 
 export default defineConfig({
   presets: [
@@ -12,7 +17,11 @@ export default defineConfig({
       },
     }),
   ],
-  transformers: [transformerDirectives(), transformerCompileClass()],
+  transformers: [
+    transformerDirectives(),
+    transformerCompileClass(),
+    transformerVariantGroup(),
+  ],
   theme: {
     colors: {},
   },
