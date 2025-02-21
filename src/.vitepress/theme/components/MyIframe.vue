@@ -1,7 +1,6 @@
 <script setup>
 import { isAbsoluteUrl } from '../../../utils'
-import IframeResizer from '@iframe-resizer/vue/sfc'
-import { ref, computed, onMounted } from 'vue'
+import { computed } from 'vue'
 const props = defineProps({ src: { type: String, required: true } })
 
 const src2 = computed(() => {
@@ -13,11 +12,7 @@ const src2 = computed(() => {
 </script>
 
 <template>
-  <IframeResizer
-    class="my-iframe"
-    :src="src2"
-    frameborder="0"
-  ></IframeResizer>
+  <iframe class="my-iframe" :src="src2" frameborder="0"></iframe>
 </template>
 
 <style lang="scss">
