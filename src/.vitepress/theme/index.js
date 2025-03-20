@@ -7,6 +7,7 @@ import MyIframe from './components/MyIframe.vue'
 import MyA from './components/MyA.vue'
 import MyGallary from './components/MyGallary.vue'
 import HintText from './components/HintText.vue'
+import SecretLink from './components/SecretLink.vue'
 
 export default {
   extends: DefaultTheme,
@@ -15,5 +16,6 @@ export default {
     app.component('my-a', MyA)
     app.component('my-gallary', MyGallary)
     app.component('hint-text', HintText)
+    app.component('se-lk', SecretLink)
   },
 }
