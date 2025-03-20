@@ -14,7 +14,7 @@
 
 <script setup>
 import { reactive, onMounted } from 'vue'
-import { http, showTip } from '../utils'
+import { http, showTip } from '../../../../utils'
 const props = defineProps({
   src: {
     type: String,

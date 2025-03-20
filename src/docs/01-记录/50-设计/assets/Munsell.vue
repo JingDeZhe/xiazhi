@@ -42,7 +42,7 @@
 <script setup>
 import chroma from 'chroma-js'
 import { computed, reactive, ref } from 'vue'
-import { http, showTip } from '../utils'
+import { http, showTip } from '@/utils'
 
 const colors = ref([])
 const rounds = ref([])

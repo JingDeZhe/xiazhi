@@ -41,6 +41,12 @@ const config = defineConfig({
     },
     darkModeSwitchTitle: '暗色模式',
     lightModeSwitchTitle: '浅色模式',
+    notFound: {
+      code: '404',
+      title: '页面丢失',
+      quote: '你来到了空无一物之处',
+      linkText: '回归主页',
+    },
     outline: {
       level: [2, 3],
     },
@@ -58,6 +64,13 @@ const config = defineConfig({
     resolve: {
       alias: {
         '@': fileURLToPath(new URL('../', import.meta.url)),
+      },
+    },
+    css: {
+      preprocessorOptions: {
+        scss: {
+          api: 'modern-compiler',
+        },
       },
     },
   },

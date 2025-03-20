@@ -27,10 +27,6 @@ pyftsubset LXGWWenKaiGBScreen.ttf --unicodes-file=sc_unicode.txt --with-zopfli -
 | 子集 TTF   | 3.36M |
 | 子集 WOFF2 | 1.74M |
 
-## 查看结果
-
-<my-iframe src="others/font-preview/index.html"></my-iframe>
-
 ## 附件
 
 <my-a href="/data/sc_unicode.txt" download="sc_unicode.txt">sc_unicode.txt</my-a>
