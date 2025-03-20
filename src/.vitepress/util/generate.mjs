@@ -25,6 +25,8 @@ export function generateSidebar() {
     files.forEach((info) => {
       const title = info.name.replace(/^[\d\.\-]*/, '')
       const dirs = info.dir.split(/[\\/]/).filter((v) => !!v)
+      if (dirs.find((v) => v === '00-srt')) return
+      if (title === 'srt') return
       let t = menuMap
       dirs.forEach((dir) => {
         dir = dir.replace(/^[\d\.\-]*/, '')
