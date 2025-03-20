@@ -12,6 +12,25 @@ export const showTip = (msg) => {
   })
 }
 
+export const showAlertInput = (title) => {
+  return new Promise((resolve, reject) => {
+    Swal.fire({
+      title: title,
+      input: 'text',
+      showCancelButton: true,
+      confirmButtonText: '确认',
+      cancelButtonText: '取消',
+      showLoaderOnConfirm: false,
+    }).then((result) => {
+      if (result.isConfirmed) {
+        resolve(result.value)
+      } else {
+        reject()
+      }
+    })
+  })
+}
+
 export const isAbsoluteUrl = (url) => {
   var absoluteUrlPattern = /^(ftp|http|https):\/\/[^ "]+$/
   return absoluteUrlPattern.test(url)
